@@ -1,0 +1,22 @@
+.custom-btn {
+    // Nouvelles couleurs de fond et de texte pour ce bouton spécifique
+    background-color: green;
+    color: black;
+  }
+  
+  .custom-btn:hover {
+    // Styles pour le survol du bouton spécifique
+    background-color: darkgreen;
+    color: white;
+  }
+  
+  .custom-btn:after {
+    // Styles pour l'effet d'animation sur ce bouton spécifique
+    background: black;
+  }
+  
+  .custom-btn:hover:after {
+    // Styles pour l'effet d'animation au survol sur ce bouton spécifique
+    background: white;
+  }
+  

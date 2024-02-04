@@ -1,0 +1,22 @@
+/* == Permet de modifier la poolice == */
+@mixin police-apparence ($police, $color, $font-size) {
+    font-family: $police;
+    font-size: $font-size;
+    color: $color;
+}
+
+/* == Permet de changer 
+    la couleur et la taille d'une icone== */
+@mixin icon-apparence ($color ,$size) {
+    font-size: $size;
+    color: $color;
+}
+
+/* == Permet de mettre en colonne (flexbox)
+    met en place la position des éléments == */
+@mixin flex-use ($direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

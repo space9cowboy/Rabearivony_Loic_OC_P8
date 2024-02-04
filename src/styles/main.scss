@@ -1,0 +1,31 @@
+/* ===== Imporation des fichiers ===== */
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/keyframes';
+@import './layouts/Header';
+@import './layouts/Footer';
+@import './layouts/About';
+@import './layouts/Projets';
+@import './layouts/Skills';
+@import './layouts/Contact';
+@import './layouts/Hero';
+@import './pages/Home';
+@import './components/ButtonContact.scss';
+@import './components/InfinitText.scss';
+@import './components/HeroAnimationText.scss';
+@import './components/InfinitLogo.scss';
+@import './components/Formulaire.scss';
+@import './components/CustomButton.scss';
+
+.app {
+   
+    font-family : 'Poppins', sans-serif;
+    height: 100%;
+}
+
+body {
+    background : rgb(30, 30, 30);
+    color: white;
+    overflow : hidden; 
+    overflow-y: scroll;
+}

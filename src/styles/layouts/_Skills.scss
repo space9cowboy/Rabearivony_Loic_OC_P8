@@ -1,0 +1,102 @@
+.skills {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    
+   
+    
+
+    &__title {
+        text-align: center;
+        padding-top: 50px;
+        text-decoration:overline;
+        margin: 0;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.tools {
+    height : 40vh;
+    &__name {
+        text-align: center;
+        text-decoration: overline;
+        padding-bottom: 20px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin : 0 200px;
+        padding : 20px;
+        //border : 1px solid black;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        .tools__item {
+            position: relative;
+
+            &:hover .tool-description {
+                opacity: 1;
+            }
+
+            &:hover .tool-description-git{
+                opacity : 1;
+            }
+        }
+    }
+
+    &__img {
+        width : 100px;
+        height : 100px;
+        overflow: hidden;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        border-radius: 50%;
+        background-color: white;
+        
+        top: 50%;
+        left:50%;
+    }
+
+    .tool-description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -52%);
+        font-size: 15px;
+        font-weight: 400;
+        color: #333;
+        background-color: rgba(255, 255, 255, 0.8); /* Fond avec opacité */
+        padding: 50px 27px;
+        border-radius: 50px;
+        opacity: 0; /* Définir l'opacité initiale à 0 */
+        transition: opacity 0.3s ease; 
+    }
+
+    .tool-description-git {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -52%);
+        font-size: 15px;
+        font-weight: 400;
+        color: #333;
+        background-color: rgba(255, 255, 255, 0.8); /* Fond avec opacité */
+        padding: 50px 39px;
+        border-radius: 50px;
+        opacity: 0; /* Définir l'opacité initiale à 0 */
+        transition: opacity 0.3s ease;  
+    }
+
+    .tools__img:hover {
+        //transform: scale(1.1);
+        opacity: 1; 
+    }
+}
+

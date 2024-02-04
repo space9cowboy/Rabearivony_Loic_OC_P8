@@ -1,0 +1,11 @@
+p {
+    font-size: 4rem;
+    font-weight:bolder;
+    color: white; 
+    margin: 0;
+    line-height: 0;
+
+    &:nth-child(4) {
+        color: yellow;
+    }
+}

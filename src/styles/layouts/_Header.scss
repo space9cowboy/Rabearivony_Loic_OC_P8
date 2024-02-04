@@ -1,0 +1,43 @@
+.navbar {
+    height: 8vh;
+    width: 100vw;
+    max-width: 95%;
+    padding: 1rem 2rem;
+    @include flex-use (row, space-between, center);
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background-color: rgba(255, 255, 255, 0.9); /* Ajoutez une couleur de fond opaque */
+    backdrop-filter: blur(10px); 
+
+    &__portfolioName {
+        font-size: calc(24px + 1.5vw);  // Utilisation de calc() pour rendre la taille réactive
+        font-weight: 900;
+        color : black;
+    }
+
+    &__desktopMenuListItem {
+        margin: calc(0.5rem + 1vw);  // Utilisation de calc() pour rendre la marge réactive
+        cursor: pointer;
+        font-size: calc(14px + 0.5vw);
+        color: black;   // Utilisation de calc() pour rendre la taille de police réactive
+    }
+
+    &__desktopMenuListItem:hover {
+        color: black;
+        padding-bottom: 5px;
+        border-bottom: 2px solid black;
+    }
+
+    @media screen and (max-width: 768px) {
+        // Styles spécifiques pour les écrans de taille maximale de 768px
+        &__portfolioName {
+            font-size: 36px;
+        }
+
+        &__desktopMenuListItem {
+            margin: 1rem;
+            font-size: 18px;
+        }
+    }
+}
