@@ -6,7 +6,7 @@
     @include flex-use (row, space-between, center);
     position: sticky;
     top: 0;
-    z-index: 4;
+    z-index: 1;
     background-color: rgba(255, 255, 255, 0.9); /* Ajoutez une couleur de fond opaque */
     backdrop-filter: blur(10px); 
 

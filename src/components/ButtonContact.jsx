@@ -1,8 +1,8 @@
 import React from 'react'
 
-function ButtonContact({ text }) {
+function ButtonContact({ onClick, text, className }) {
   return (
-    <button className='btn'>
+    <button className={`btn ${className}`} onClick={onClick}>
         {text}
     </button>
   )

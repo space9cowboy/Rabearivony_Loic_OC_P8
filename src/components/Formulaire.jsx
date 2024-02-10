@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import ButtonContact from './ButtonContact';
+import Contact from '../assets/contact.png'
 
 
 const ContactUs = () => {
@@ -17,6 +18,28 @@ const ContactUs = () => {
       });
   };
 
+  const imgRef = useRef(null);
+
+  const handleMouseMove = (e) => {
+    const { left, top, width, height } = imgRef.current.getBoundingClientRect();
+    const x = e.clientX - left;
+    const y = e.clientY - top;
+
+    const centerX = width / 2;
+    const centerY = height / 2;
+
+    const offsetX = (x - centerX) / centerX;
+    const offsetY = (centerY - y) / centerY;
+
+    const maxRotate = 30; 
+
+    imgRef.current.style.transform = `perspective(1000px) rotateX(${-offsetY * maxRotate}deg) rotateY(${offsetX * maxRotate}deg)`
+  };
+
+  const handleMouseLeave = () => {
+    imgRef.current.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+  };
+
   return (
     <div className="contact-container">
       <div className="left-section">
@@ -26,7 +49,9 @@ const ContactUs = () => {
 
            <p> + 33 6 30 63 32 67 </p>
         
-        <img src="contact-image.jpg" alt="Contact" />
+        <div className="contact1"  onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} ref={imgRef}>
+            <img src={Contact}  className="contactimg" alt="Contact" />
+        </div>
       </div>
       <div className="right-section">
         <form onSubmit={sendEmail}>
