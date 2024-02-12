@@ -54,17 +54,19 @@
   }
   
    .right-section button {
-    margin-left: 225px;
+    margin: 0 250px;
     margin-top: 40px;
     //padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    // background-color: white;
+    // color: black;
     border: none;
-    border-radius: 5px;
+    //border-radius: 5px;
     cursor: pointer;
+    border : 1px solid yellow;
   }
   
-  .right-section button:hover {
-    background-color: #0056b3;
-  }
+  // .right-section button:hover {
+  //   color : white;
+  //   background-color: black;
+  // }
   

@@ -2,9 +2,12 @@ import { useState } from 'react'
 
 import ButtonContact from '../components/ButtonContact';
 import ModalProject from '../components/ModalProject';
+import projects from '../assets/Projects.json'
 
 function CardProject (card)  {
     const [modalOpen, setModalOpen] = useState(false);
+   
+    const project = projects.find(p => p.id.toString() === card.iconModal);
 
   const openModal = () => {
     setModalOpen(true);
@@ -13,6 +16,8 @@ function CardProject (card)  {
   const closeModal = () => {
     setModalOpen(false);
   }
+
+  
   return (
       <>
     
@@ -37,7 +42,7 @@ function CardProject (card)  {
 
         {/* MODAL 1 */}
         {modalOpen && (
-        <ModalProject closeModal={closeModal} />
+        <ModalProject  onClick={{ closeModal }} project={project}  />
         
       )}
   </>)

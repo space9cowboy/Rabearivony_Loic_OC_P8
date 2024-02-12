@@ -18,7 +18,7 @@ function Skills() {
 
   return (
     <div className='skills'>
-      <h1 className='skills__title'>COMPÉTENCES</h1>
+      <h1 className='skills__title'>SKILLS</h1>
       
       <div className="skills__logo">
         {/* Première instance d'InfinitLogo avec les images Front-end et les descriptions correspondantes */}
@@ -36,7 +36,7 @@ function Skills() {
         />
       </div>
       <div className="tools">
-        <h1 className="tools__name">Les outils que j'utilise</h1>
+        <h2 className="tools__name">Tools I use</h2>
         <div className="tools__container">
           
         <div className="tools__item">

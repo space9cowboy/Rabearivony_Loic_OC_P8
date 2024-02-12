@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "title": "Booki",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultricies quam. Sed dignissim nulla in varius finibus. Mauris eget erat nisi.",
+      "mission": "Créer la page d'accueil d'une agence de voyage avec HTML & CSS.",
+      "skills": ["Installer un environnement de développement front-end", "Intégrer du contenu conformément à une maquette avec HTML et CSS", "Implémenter une interface responsive avec HTML et CSS", "Versionner son projet avec Git et Github"],
+      "comments": "Projet 2 de la formation OpenClassRooms - Développeur Web", 
+      "tags": ["HTML", "CSS", "Figma", "Github"],
+      "imageIphone": "Booki-Iphone.png",
+      "imageMac" : "Booki-Mac.png",
+      "link": "https://exemple.com/projet1"
+    },
+    {
+      "id": 2,
+      "title": "Sophie Bluel - Architecte d'intérieur",
+      "content": "Autre contenu pour le projet 2.",
+      "mission": "Créer une page web dynamique avec JavaScript",
+      "skills": ["Récupérer les données utilisateurs dans le JavaScript via des formulaires", "Manipuler les éléments du DOM avec JavaScript", "Gérer les événements utilisateurs avec JavaScript: Filtres, connexion, envoi de données, API"],
+      "comments": "Projet 3 de la formation OpenClassRooms - Développeur Web",
+      "tags": ["HTML", "CSS", "JavaScript", "Figma", "Github"],
+      "image": "project2.jpg",
+      "link": "https://exemple.com/projet2"
+    },
+    {
+      "id": 3,
+      "title": "Kasa",
+      "content": "Contenu différent pour le projet 3.",
+      "mission": "Créer une application web de location immobilière avec React",
+      "skills": ["Initialiser une application avec Create React App/Vite.js", "Développer des éléments de l'interface d'un site web grâce à des composants React", "Configurer la navigation entre les pages de l'application avec React Router", "Mettre en œuvre des animations SCSS"],
+      "comments": "Projet 6 de la formation OpenClassRooms - Développeur Web",
+      "tags": ["React", "Sass", "Figma", "Github"],
+      "image": "project3.jpg",
+      "link": "https://exemple.com/projet3"
+    },
+    {
+      "id": 4,
+      "title": "Mon Vieux Grimoire",
+      "content": "Encore un autre contenu pour le projet 4.",
+      "mission": "Développer le back-end d'un site de notation de livres",
+      "skills": ["Implémenter un modèle logique de données conformément à la réglementation", "Stocker des données de manière sécurisée", "Mettre en oeuvre des opérations CRUD de manière sécurisée"],
+      "comments": "Projet 7 de la formation OpenClassRooms - Développeur Web",
+      "tags": ["Node.js", "Express", "MongoDB"],
+      "image": "project4.jpg",
+      "link": "https://exemple.com/projet4"
+    }
+  ]
+  

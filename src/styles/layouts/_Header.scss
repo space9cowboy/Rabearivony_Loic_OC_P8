@@ -1,7 +1,7 @@
 .navbar {
     height: 8vh;
     width: 100vw;
-    max-width: 95%;
+    max-width: 96%;
     padding: 1rem 2rem;
     @include flex-use (row, space-between, center);
     position: sticky;

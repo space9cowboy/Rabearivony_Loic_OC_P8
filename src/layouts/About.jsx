@@ -3,11 +3,11 @@ import React from 'react'
 function about() {
   return (
     <div className="about">
-      <h2>À propos de moi</h2>
+      <h2>ABOUT ME</h2>
       <p className='about-text'>
-        Je suis passionné par le développement front-end et le web design, étant sensibilisé à
-        l'expérience utilisateur et l'accessibilité. Je développe des projets centrés autour de
-        l'Humain.
+      I'm passionate about front-end development and web design, and have a keen awareness of
+        user experience and accessibility. I develop projects centered around
+        the human element.
       </p>
      
     </div>
