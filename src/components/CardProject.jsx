@@ -34,7 +34,7 @@ function CardProject (card)  {
               <div className="icon">{card.iconModal}</div>
               
                
-                  <ButtonContact onClick={openModal}  text="Open me"/>
+                  <ButtonContact withIconOpen={true}onClick={openModal}  text="Open"/>
                
                
             </div>

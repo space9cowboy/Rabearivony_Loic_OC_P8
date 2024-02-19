@@ -3,7 +3,7 @@ import InfinitLogo from '../components/InfinitLogo';
 import LogoNode from '../assets/nodejs.png';
 import LogoPhp from '../assets/PHP1.png';
 import LogoMDB from '../assets/MDB.png';
-import LogoJS from '../assets/logo-JS.svg.png';
+import LogoJS from '../assets/JSLOGO.jpg';
 import LogoReact from '../assets/react.png';
 import LogoSass from '../assets/SASS.png';
 import LogoGit from '../assets/gitt.png'

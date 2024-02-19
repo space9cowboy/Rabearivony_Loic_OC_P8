@@ -14,11 +14,11 @@
     overflow: hidden;
    }
    
-   button:hover {
+    .btncontact button:hover {
     color: rgb(30, 30, 30);
    }
    
-   button:after {
+   .btncontact button:after {
     content: "";
     background: white;
     position: absolute;
@@ -31,7 +31,7 @@
     transition: all 0.5s;
    }
    
-   button:hover:after {
+    .btncontact button:hover:after {
     transform: skewX(-45deg) scale(1, 1);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;

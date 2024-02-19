@@ -23,10 +23,15 @@
       justify-content: space-between;
       
       button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap : 8px;
         margin-top: 10px;
         cursor: pointer;
         background-color: black;
         margin : 10px 220px;
+        z-index: 0;
       }
       
       & > .icon {
@@ -56,14 +61,3 @@
     }
   }
 
-.modalClose {
-    opacity : 0; 
-}
-
-.modalOpen {
-    opacity: 1;
-}
-
-.modalAnim {
-    transition : opacity 1s;
-}

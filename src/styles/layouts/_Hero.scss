@@ -1,11 +1,11 @@
 .hero {
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     @include flex-use(row, flex-start, stretch);
 
     flex-wrap: wrap;
     align-content: flex-start;
-    background: linear-gradient(to top, #000000, rgba(255, 255, 255, 0.9));
+    background: linear-gradient(to top, rgb(30, 30, 30), rgba(255, 255, 255, 0.9));
 
     &__Top {
         display: block;
@@ -19,7 +19,7 @@
 
     &__gap {
         display : flex; 
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 40px;
     }
 
@@ -36,15 +36,33 @@
         
     }
 
+    &__contact {
+        
+        display: flex;
+        flex-direction: row;
+        gap : 20px;
+    }
+
+    &__Left button {
+        margin : 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap : 8px;
+        z-index: 0;
+    }
+
     &__hello {
         font-size: calc(20px + 1.5vw);  // Utilisation de calc() pour rendre la taille réactive
         font-weight: 400;
+        color : rgb(30, 30, 30);
     }
 
     &__name {
         font-size: calc(3rem + 2vw);  // Utilisation de calc() pour rendre la taille réactive
         font-weight: bolder;
         margin-bottom: 40px;  // Ajustez selon vos besoins
+        color : rgb(30, 30, 30);
     }
 
     &__nameColor {
@@ -53,7 +71,9 @@
 
     &__info {
         font-size: calc(4px + 1vw);  // Utilisation de calc() pour rendre la taille réactive
-        margin-top: 100px;  // Ajustez selon vos besoins
+        margin-top: 70px;  // Ajustez selon vos besoins
+        margin-bottom: 20px;
+        color : rgb(30, 30, 30)
     }
 
     &__Right {

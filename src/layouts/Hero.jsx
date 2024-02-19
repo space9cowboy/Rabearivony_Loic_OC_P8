@@ -2,6 +2,9 @@ import React, { useRef} from 'react'
 import logo from '../assets/tsanta_ai.png'
 import InfinitText from '../components/InfinitText'
 import HeroAnimationText from '../components/HeroAnimationText'
+import ButtonContact from '../components/ButtonContact';
+import { FaGithub } from "react-icons/fa6";
+
 
 function Hero() {
 
@@ -38,6 +41,10 @@ function Hero() {
               <span className="hero__name"> I'm <span className='hero__nameColor'>Loïc</span></span>
               <HeroAnimationText />
               <span className="hero__info">"Turn ideas into exceptional web experiences - Passionate developer crafting innovative solutions for a connected world."</span>
+              <div className='hero__contact'>
+                <ButtonContact withIcon={true} text="Github" onClick={() => console.log('Clic')} />
+                <ButtonContact withIcon1={true} text="CV" onClick={() => console.log('Clic')} />
+              </div>
           </div>
           <div className="hero__Right">
           

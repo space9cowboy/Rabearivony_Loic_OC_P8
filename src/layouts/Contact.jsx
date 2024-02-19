@@ -1,10 +1,10 @@
 
-import Formulaire from '../components/Formulaire'
+ import Formulaire from '../components/Formulaire'
 
 function contact() {
   return (
     <div className='contact'>
-      <Formulaire />
+       <Formulaire /> 
     </div>
   )
 }

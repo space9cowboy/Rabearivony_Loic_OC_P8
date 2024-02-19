@@ -6,10 +6,6 @@ import MVGImage from '../assets/grimoire.png'
 
 import CardProject from '../components/CardProject';
 
-
-
-
-
 function Projets() {
 
  
