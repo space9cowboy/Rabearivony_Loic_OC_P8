@@ -34,7 +34,7 @@ function CardProject (card)  {
               <div className="icon">{card.iconModal}</div>
               
                
-                  <ButtonContact withIconOpen={true}onClick={openModal}  text="Open"/>
+                  <ButtonContact withIconOpen={true}onClick={openModal}  text="Voir plus"/>
                
                
             </div>
@@ -45,6 +45,36 @@ function CardProject (card)  {
         <ModalProject  onClick={{ closeModal }} project={project}  />
         
       )}
+
+
+      {/* MOBILE CARD */}
+
+        <label htmlFor={card.htmlForValue} className="cardMob" >
+        
+        <div className="rowMob"   style={{
+         background : `url(${card.image}) no-repeat `,
+          height : "100%",
+          width : "100%",
+          backgroundSize : "cover",
+          
+          }}>
+        
+          <div className="iconMob">{card.iconModal}</div>
+          
+           
+              <ButtonContact withIconOpen={true}onClick={openModal}  text="Voir plus"/>
+           
+           
+        </div>
+    </label>
+
+    {/* MODAL 1 */}
+    {modalOpen && (
+    <ModalProject  onClick={{ closeModal }} project={project}  />
+    
+  )}
+
+
   </>)
 }
 

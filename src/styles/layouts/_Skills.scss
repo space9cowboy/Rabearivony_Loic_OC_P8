@@ -19,7 +19,7 @@
 }
 
 .tools {
-    height : 40vh;
+    height : 45vh;
     &__name {
         text-align: center;
         text-decoration: overline;
@@ -97,6 +97,29 @@
     .tools__img:hover {
         //transform: scale(1.1);
         opacity: 1; 
+    }
+}
+
+@media screen and (max-width:880px) {
+    .skills {
+        margin-top : 40px;
+        &__title {
+            font-size: 24px;
+        }
+        &__logo {
+            display : flex;
+            flex-direction: column;
+        }
+    }
+
+    .tools {
+        &__name {
+            font-size: 18px;
+        }
+        &__container {
+            margin: 30px 50px 0;
+            flex-wrap: wrap;
+        }
     }
 }
 

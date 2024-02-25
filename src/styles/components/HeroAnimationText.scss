@@ -5,7 +5,21 @@ p {
     margin: 0;
     line-height: 0;
 
-    &:nth-child(4) {
+    &:nth-child(2) {
         color: yellow;
+    }
+}
+
+@media screen and (max-width : 1160px) {
+    p {
+        font-size: calc(3rem + 0.5vw)
+    }
+}
+
+@media screen and (max-width : 992px) {
+    p {
+        &:nth-child(2) {
+            margin-left:75px;
+        }
     }
 }

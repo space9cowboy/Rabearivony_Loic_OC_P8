@@ -2,12 +2,10 @@ import React from 'react'
 
 function about() {
   return (
-    <div className="about">
-      <h2>ABOUT ME</h2>
+    <div id="aPropos" className="about">
+      <h1>A PROPOS DE MOI</h1>
       <p className='about-text'>
-      I'm passionate about front-end development and web design, and have a keen awareness of
-        user experience and accessibility. I develop projects centered around
-        the human element.
+      Mon amour pour le développement front-end va de pair avec ma passion pour le design. Je trouve une immense satisfaction à transformer des concepts de design en réalité interactive. Mon objectif est de créer des sites Web et des applications qui non seulement fonctionnent de manière transparente, mais qui impressionnent également visuellement.
       </p>
      
     </div>

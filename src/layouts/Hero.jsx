@@ -31,19 +31,19 @@ function Hero() {
     };
 
   return (
-    <div className="hero">
-        <div className="hero__Top">
+    <div  id="accueil" className="hero">
+        {/* <div className="hero__Top">
             <InfinitText />
-        </div>
+        </div> */}
         <div className="hero__gap">
           <div className='hero__Left'>
-              <span className="hero__hello">Hello,</span> <br />
-              <span className="hero__name"> I'm <span className='hero__nameColor'>Loïc</span></span>
+              <span className="hero__hello">Bonjour,</span> <br />
+              <span className="hero__name"> Je suis <span className='hero__nameColor'>Loïc</span></span>
               <HeroAnimationText />
-              <span className="hero__info">"Turn ideas into exceptional web experiences - Passionate developer crafting innovative solutions for a connected world."</span>
+              <span className="hero__info">"Transformer des idées en expériences web exceptionnelles - Développeur passionné créant des solutions innovantes pour un monde connecté."</span>
               <div className='hero__contact'>
                 <ButtonContact withIcon={true} text="Github" onClick={() => console.log('Clic')} />
-                <ButtonContact withIcon1={true} text="CV" onClick={() => console.log('Clic')} />
+                <ButtonContact withIcon1={true} text="CV" cvlink="https://drive.google.com/file/d/1JHtmMUGoWx5yzDoVasf5YUhyoJ5deIRG/view?usp=drive_link" onClick={() => console.log('Clic')} />
               </div>
           </div>
           <div className="hero__Right">

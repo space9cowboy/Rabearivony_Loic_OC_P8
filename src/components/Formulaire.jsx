@@ -185,7 +185,7 @@ import { IoIosPhonePortrait } from "react-icons/io";
 
            <div className='user'>
              <label htmlFor="message">Message</label>
-             <textarea name="message" id="message" rows="10" placeholder="Veuillez écrire votre message ici..." />
+             <textarea name="message" id="message" rows="5" placeholder="Veuillez écrire votre message ici..." />
            </div>
 
            <center>

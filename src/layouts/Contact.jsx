@@ -3,7 +3,7 @@
 
 function contact() {
   return (
-    <div className='contact'>
+    <div id="contact" className='contact'>
        <Formulaire /> 
     </div>
   )

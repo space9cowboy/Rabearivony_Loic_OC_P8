@@ -17,8 +17,8 @@ function Skills() {
   const toolsDescriptions = ["Git", "Github", "Figma", "Notion"];
 
   return (
-    <div className='skills'>
-      <h1 className='skills__title'>SKILLS</h1>
+    <div id="competences" className='skills'>
+      <h1 className='skills__title'>COMPÉTENCES</h1>
       
       <div className="skills__logo">
         {/* Première instance d'InfinitLogo avec les images Front-end et les descriptions correspondantes */}
@@ -36,7 +36,7 @@ function Skills() {
         />
       </div>
       <div className="tools">
-        <h2 className="tools__name">Tools I use</h2>
+        <h2 className="tools__name">Outils que j'utilise</h2>
         <div className="tools__container">
           
         <div className="tools__item">

@@ -46,9 +46,9 @@ const AnimationComponent = () => {
   return (
     <div>
       <p ref={(el) => (textRefs.current[0] = el)}>Web Developper</p>
-      <p ref={(el) => (textRefs.current[1] = el)}>UI Designer</p>
-      <p ref={(el) => (textRefs.current[2] = el)}>Frontender</p>
-      <p ref={(el) => (textRefs.current[3] = el)}>Human After All</p>
+      <p ref={(el) => (textRefs.current[1] = el)}>Frontender</p>
+      {/* <p ref={(el) => (textRefs.current[2] = el)}>Frontender</p>
+      <p ref={(el) => (textRefs.current[3] = el)}>Human After All</p> */}
     </div>
   );
 };
