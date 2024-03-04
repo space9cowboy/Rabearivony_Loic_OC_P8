@@ -11,10 +11,10 @@ function ModalProject({ onClick, project }) {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
   return (
-    <div className="modal-overlay" onClick={onClick.closeModal}>
+    <div className="modal-overlay" onClick={onClick}>
       {isDesktopOrLaptop && (
         <div className="modal" onClick={e => e.stopPropagation()}>
-          <span className="close-icon" onClick={onClick.closeModal}>X</span>
+          <span className="close-icon" onClick={onClick}>X</span>
           <div className="modal-form">
             <div className='modal-inside'>
               <h1>{project.title}</h1>

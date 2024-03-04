@@ -1,7 +1,9 @@
-import BookiImage from '../assets/BOOKI.png'
-import SBImage from '../assets/sophie.png'
-import KasaImage from '../assets/kasa-copie.png'
-import MVGImage from '../assets/grimoire.png'
+
+
+import BookiImage from '../assets/imagebooki.png'
+import SBImage from '../assets/imagesophie.png'
+import KasaImage from '../assets/imagekasa.png'
+import MVGImage from '../assets/imagegrimoire.png'
 
 
 import CardProject from '../components/CardProject';
@@ -17,7 +19,7 @@ function Projets() {
       
       <div className="container">
 
-      <input type="radio" name="slide" id="c1"  default checked/>
+      <input type="radio" name="slide" id="c1"  defaultChecked/>
         <CardProject image={BookiImage} htmlForValue="c1" iconModal="1" />
 
         <input type="radio" name="slide" id="c2" />
