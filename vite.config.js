@@ -4,8 +4,10 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-
-  // server: {
-  //   port: 8686,
-  // },
+  build: {
+    outDir: "portfolio",
+    rollupOptions: {
+      input: ["src/main.jsx", "./index.html"],
+    },
+  },
 });
