@@ -61,9 +61,12 @@
     }
   }
 
-  // MOBILE STYLES 
-  .cardMob {
-    width: 600px;
+  
+
+  @media screen and (max-width:768px) {
+    // MOBILE STYLES 
+  .card {
+    width: 100%;
     height: 350px;
     border-radius: 0.75rem;
     background-size: cover;
@@ -73,16 +76,18 @@
     margin: 0 10px;
     display: flex;
     align-items: flex-end;
-    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+     transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
-    & > .rowMob {
+    
+    & > .row {
+      width: 100%;
       color: white;
       display: flex;
       flex-wrap: nowrap;
       flex-direction: column;
       justify-content: space-between;
 
-      & > .iconMob {
+      & > .icon {
         background: #223;
         color: white;
         border-radius: 50%;
@@ -102,57 +107,131 @@
         margin-top: 10px;
         cursor: pointer;
         background-color: black;
-        margin : 10px 220px;
+        //margin : 10px 220px;
+        margin : 0;
         z-index: 0;
       }
     }
+    
   }
 
-  @media screen and (max-width:992px) {
+  
+  input:checked + label {
+    width: 600px;
+  
+    & .description {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+  }
+  }
+
+  @media screen and (max-width:430px) {
     .card {
-      .row {
-        button {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap : 8px;
-          margin-top: 10px;
-          cursor: pointer;
-          background-color: black;
-          margin : 10px 190px;
-          z-index: 0;
-        }
-        .icon {
-          background: #223;
-        color: white;
-        border-radius: 50%;
-        width: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 15px;
-        height : 40px;
-        }
+      height : 200px;
+      width :90%;
+      //width : 100%;
+      & > .row {
+        width : 200px;
       }
     }
+
+    input:checked + label {
+      width: 94%;
+    
+      & .description {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+      }
+    }
+  }
+
+  .marginbottom {
+    margin-bottom: 2%;
+  }
+
+  // @media screen and (max-width:992px) {
+  //   .card {
+  //     .row {
+  //       button {
+  //         display: flex;
+  //         align-items: center;
+  //         justify-content: center;
+  //         gap : 8px;
+  //         margin-top: 10px;
+  //         cursor: pointer;
+  //         background-color: black;
+  //         margin : 10px 190px;
+  //         z-index: 0;
+  //       }
+  //       .icon {
+  //         background: #223;
+  //       color: white;
+  //       border-radius: 50%;
+  //       width: 40px;
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       margin: 15px;
+  //       height : 40px;
+  //       }
+  //     }
+  //   }
   
-  }
+  // }
 
-  @media screen and (min-width:992px) {
-    .cardMob {
-      display : none;
-    }
-  }
+  // @media screen and (min-width:992px) {
+  //   .cardMob {
+  //     display : none;
+  //   }
+  // }
 
-  @media screen and (max-width: 880px) {
-    .card {
-      display : none;
-    }
-  }
+  // @media screen and (max-width: 880px) {
+  //   .card {
+  //     display : none;
+  //   }
 
-  @media screen and (min-width:880px) {
-    .cardMob {
-      display : none;
-    }
-  }
+
+
+  // }
+
+  // @media screen and (min-width:880px) {
+  //   .cardMob {
+  //     display : none;
+  //   }
+  // }
+
+  // @media screen and (max-width:430px) {
+  //   .cardMob {
+  //     height : 200px;
+  //     .rowMob {
+  //       .iconMob{
+  //         width : 30px;
+  //         height : 30px;
+  //       }
+  //     }
+  //   }
+  // }
+  // @media screen and (max-width:375px) {
+  //   .cardMob {
+  //     height : 180px;
+  //     .rowMob {
+  //       .iconMob{
+  //         width : 27px;
+  //         height : 27px;
+  //       }
+  //     }
+  //   }
+  // }
+  // @media screen and (max-width:320px) {
+  //   .cardMob {
+  //     height : 160px;
+  //     .rowMob {
+  //       .iconMob{
+  //         width : 25px;
+  //         height : 25px;
+  //       }
+  //     }
+  //   }
+  // }
 

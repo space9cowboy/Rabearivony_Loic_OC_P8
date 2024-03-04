@@ -1,10 +1,10 @@
 import React from 'react';
 
-function ButtonSocial({ className, onClick, children }) {
+function ButtonSocial( social) {
   return (
-    <button className={` ${className}`} onClick={onClick}>
-      {children}
-    </button>
+    <a className={` ${social.className}`} href={social.onClick}>
+      {social.children}
+    </a>
   );
 }
 

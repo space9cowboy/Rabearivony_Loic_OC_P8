@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, Events, scrollSpy } from 'react-scroll';
 import ButtonContact from '../components/ButtonContact';
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseSharp } from "react-icons/io5";
 
 function Header() {
   useEffect(() => {
@@ -16,6 +17,12 @@ function Header() {
   }, []);
 
   const [showMenu, setShowMenu] = useState(false);
+  const [showCloseIcon, setShowCloseIcon] = useState(false); 
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+    setShowCloseIcon(!showCloseIcon); // Bascule l'état de l'icône
+  };
 
   return (
     <nav className="navbar">
@@ -33,7 +40,11 @@ function Header() {
       </Link>
 
       {/* mobile part */}
-      <RxHamburgerMenu className='mobHamburger' onClick={() => setShowMenu(!showMenu)} />
+      {showCloseIcon ? ( // Condition pour afficher l'icône de fermeture ou du hamburger
+        <IoCloseSharp className='mobHamburger' onClick={toggleMenu} />
+      ) : (
+        <RxHamburgerMenu className='mobHamburger' onClick={toggleMenu} />
+      )}
       {showMenu && (
         <div className="mobMenu">
           <Link activeClass="mobActive" to="accueil" spy={true} offset={-100} smooth={true} duration={500} className="mobMenuListItem">Accueil</Link>

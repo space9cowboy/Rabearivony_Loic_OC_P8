@@ -1,9 +1,11 @@
 import React, { useRef} from 'react'
+import { Link } from "react-router-dom";
 import logo from '../assets/tsanta_ai.png'
 import InfinitText from '../components/InfinitText'
 import HeroAnimationText from '../components/HeroAnimationText'
 import ButtonContact from '../components/ButtonContact';
 import { FaGithub } from "react-icons/fa6";
+import { LuHardDriveDownload } from "react-icons/lu";
 
 
 function Hero() {
@@ -42,8 +44,9 @@ function Hero() {
               <HeroAnimationText />
               <span className="hero__info">"Transformer des idées en expériences web exceptionnelles - Développeur passionné créant des solutions innovantes pour un monde connecté."</span>
               <div className='hero__contact'>
-                <ButtonContact withIcon={true} text="Github" onClick={() => console.log('Clic')} />
-                <ButtonContact withIcon1={true} text="CV" cvlink="https://drive.google.com/file/d/1JHtmMUGoWx5yzDoVasf5YUhyoJ5deIRG/view?usp=drive_link" onClick={() => console.log('Clic')} />
+                
+                <a className='btn btnLink' href="https://github.com/space9cowboy"><FaGithub /><span>Github</span></a>
+                <a className='btn btnLink' href="https://drive.google.com/file/d/1JHtmMUGoWx5yzDoVasf5YUhyoJ5deIRG/view?usp=drive_link"  ><LuHardDriveDownload /><span>CV</span></a>
               </div>
           </div>
           <div className="hero__Right">

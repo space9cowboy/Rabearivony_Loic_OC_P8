@@ -92,8 +92,6 @@
             
         }
 
-    
-
         &__desktopMenuListItem {
             // margin: 1rem;
             // font-size: 18px;
@@ -109,5 +107,21 @@
         }
 
 
+    }
+
+    @media screen and (max-width:430px) {
+        & {
+           
+            height : 5vh;
+        }
+        
+        &__portfolioName {
+            font-size : 26px;
+        }
+        .mobHamburger {
+            width : 20px;
+            height : 20px;
+            padding-right: 33px;
+        }
     }
 }

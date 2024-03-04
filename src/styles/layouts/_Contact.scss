@@ -3,8 +3,24 @@
     background: linear-gradient(to bottom, rgb(30, 30, 30), rgba(255, 255, 255, 0.9));
 }
 
-@media screen and (max-width:880px) {
+// @media screen and (max-width:880px) {
+//     .contact {
+//         height: 118vh;
+//     }
+// }
+@media screen and (max-width:768px) {
     .contact {
-        height: 130vh;
+        height: 118vh;
     }
 }
+@media screen and (max-width:430px) {
+    .contact {
+        height: 111vh;
+    }
+}
+// @media screen and (max-width:430px) {
+//     .contact {
+//         height: 100vh;
+//     }
+// }
+

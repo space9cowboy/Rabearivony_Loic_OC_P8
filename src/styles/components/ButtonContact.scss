@@ -14,11 +14,11 @@
     overflow: hidden;
    }
    
-    .btncontact button:hover {
+    .btncontact  button:hover {
     color: rgb(30, 30, 30);
    }
    
-   .btncontact button:after {
+   .btncontact  button:after {
     content: "";
     background: white;
     position: absolute;
@@ -31,11 +31,58 @@
     transition: all 0.5s;
    }
    
-    .btncontact button:hover:after {
+    .btncontact  button:hover:after {
     transform: skewX(-45deg) scale(1, 1);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
    }
+
+   .btnLink {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       text-decoration: none;
+       gap : 10px;
+       z-index: 0;
+       
+   }
+
+    .btnLink:hover {
+    color: rgb(30, 30, 30);
+   }
+
+
+   .btnLink:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+     .btnLink:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
+
+
+//    .btnLink span {
+//        width : 50%;
+//    }
+
+@media screen and (max-width:500px) {
+    .btn {
+        
+        font-size: 15px;
+    }
+}
 
 
 

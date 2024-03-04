@@ -2,7 +2,7 @@
     background-color: rgba(255, 255, 255, 0.9);
     color: black;
     padding: 2rem;
-    border-radius: 50px;
+    border-radius: 2rem;
    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 0 100px;
     display: flex;
@@ -35,5 +35,31 @@
     .about-text {
       font-size: calc(4px + 1vw);
     }
+  }
+
+  @media screen and (max-width:768px) {
+    .about {
+      margin : 0;
+      border-radius: 0;
+      .about-text {
+        margin: 0 30px;
+      }
+    }
+    
+  }
+
+  @media screen and (max-width:430px) {
+    .about {
+      margin : 0;
+      border-radius: 0;
+      .about-text {
+        margin : 0 10px;
+        font-size: 11px;
+      }
+    }
+    .about h1 {
+      font-size: 17px;
+    }
+    
   }
   

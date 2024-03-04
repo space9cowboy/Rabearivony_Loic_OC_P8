@@ -26,55 +26,96 @@
     justify-content: start;
   }
 
-  // MOBILE STYLES 
-  .wrapperMob {
-    width: 100%;
-    //height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .containerMob {
-    height: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 40px;
-  }
   
-  @media screen and (max-width:992px) { 
-    .wrapper {
-      &__project {
-        margin-bottom: 50px;
-        text-decoration:overline;
-        font-size: 24px;
-      }
-    }
-    .container {
-      height: calc(100px + 200px);
-      width: calc(400px + 400px);
 
-    }
+  @media screen and (max-width:768px) {
+// MOBILE STYLES 
+.wrapper {
+  width: 100%;
+  //height: 100vh;
+  height : 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  margin-top : 40px;
+  &__project {
+    font-size : 24px;
+  }
+}
+
+.container {
+  //width : 75%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 40px;
+  
+}
   }
 
-  @media screen and (max-width:880px) {
-    .wrapper {
-      height : 100%;
-    }
-    .container {
-      display : none;
+@media screen and (max-width:430px) {
+  .wrapper {
+    &__project {
+      font-size : 17px;
     }
   }
+  .container {
+    width : 100%;
+  }
+}
+  
+  // @media screen and (max-width:992px) { 
+  //   .wrapper {
+  //     //width : 100%;
+  //     height: 80vh;
+  //     &__project {
+  //       margin-bottom: 50px;
+  //       text-decoration:overline;
+  //       font-size: 24px;
+  //     }
+  //   }
+  //   .container {
+  //     height: calc(100px + 200px);
+  //     width: calc(400px + 400px);
+  //     justify-content: center;
 
-  @media screen and (min-width:880px) {
+  //   }
+  // }
+
+  // @media screen and (max-width:880px) {
+  //   .wrapper {
+  //     height : 100%;
+  //     margin-top: 20px;
+  //   }
+  //   .container {
+  //     display : none;
+  //   }
+  // }
+
+  // @media screen and (min-width:880px) {
     
-    .containerMob {
-      display : none;
-    }
-  }
+  //   .containerMob {
+  //     display : none;
+  //   }
+  // }
+
+  // @media screen and (max-width:430px) {
+  //   .wrapper {
+  //     &__project {
+  //       font-size: 17px;
+  //     }
+  //   }
+  //   // .container {
+  //   //   height: calc(50px + 200px);
+  //   //   width: calc(200px + 400px);
+  //   //   justify-content: center;
+
+  //   // }
+  // }
   
   
   

@@ -28,6 +28,9 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .whatsapp {
@@ -46,6 +49,9 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .linkedin {
@@ -64,6 +70,9 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .github {
@@ -81,6 +90,9 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .discord {
@@ -127,5 +139,45 @@
   
   .card4:hover .discord {
     fill: white;
+  }
+
+  @media screen and (max-width:880px) {
+    .main {
+      margin-top: 15px;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+      width : 60px;
+      height: 60px;
+    }
+
+    .whatsapp {
+      width : 35px;
+      height : 35px;
+      margin-top: 1em;
+      margin-left: 1em;
+    }
+    .linkedin {
+      width : 30px;
+      height : 30px;
+      margin-top: 1em;
+      margin-left: -0.5em;
+    }
+    .github {
+      width : 35px;
+      height : 35px;
+      margin-top: 0em;
+      margin-left: 1em;
+    }
+    .discord {
+      width : 35px;
+      height : 35px;
+      margin-top: 0em;
+      margin-left: -0.4em;
+    }
+
   }
   

@@ -44,7 +44,7 @@ const AnimationComponent = () => {
   }, []);
 
   return (
-    <div>
+    <div className='heroAnimText'>
       <p ref={(el) => (textRefs.current[0] = el)}>Web Developper</p>
       <p ref={(el) => (textRefs.current[1] = el)}>Frontender</p>
       {/* <p ref={(el) => (textRefs.current[2] = el)}>Frontender</p>

@@ -8,3 +8,9 @@
     color : white;
     height: 10vh;
 }
+
+@media screen and (max-width:430px) {
+    .footer {
+        font-size: 12px;
+    }
+}

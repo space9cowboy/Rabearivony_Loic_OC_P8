@@ -1,7 +1,7 @@
 .skills {
     background-color: rgba(255, 255, 255, 0.9);
     color: black;
-    border-radius: 50px;
+    border-radius: 2rem;
     margin : 0 100px;
    // background: linear-gradient(to bottom,rgb(30, 30, 30), rgb(170, 183, 184));
     &__title {
@@ -29,12 +29,13 @@
     &__container {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        margin : 0 200px;
-        padding : 20px;
+        margin : 0 80px;
+        padding : 15px;
         //border : 1px solid black;
-        border-radius: 40px;
+        border-radius: 2rem;
         
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 
@@ -66,14 +67,14 @@
 
     .tool-description {
         position: absolute;
-        top: 50%;
+        top: 36%;
         left: 50%;
         transform: translate(-50%, -52%);
         font-size: 15px;
         font-weight: 400;
         color: #333;
         background-color: rgba(255, 255, 255, 0.8); /* Fond avec opacité */
-        padding: 50px 27px;
+        padding: 42px 27px;
         border-radius: 50px;
         opacity: 0; /* Définir l'opacité initiale à 0 */
         transition: opacity 0.3s ease; 
@@ -81,14 +82,14 @@
 
     .tool-description-git {
         position: absolute;
-        top: 50%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -52%);
         font-size: 15px;
         font-weight: 400;
         color: #333;
         background-color: rgba(255, 255, 255, 0.8); /* Fond avec opacité */
-        padding: 50px 39px;
+        padding: 42px 40px;
         border-radius: 50px;
         opacity: 0; /* Définir l'opacité initiale à 0 */
         transition: opacity 0.3s ease;  
@@ -100,12 +101,25 @@
     }
 }
 
+@media screen and (max-width:992px) {
+    .skills {
+        &__title {
+            font-size : 24px;
+        }
+        &__logo {
+            display:flex;
+            flex-direction: column;
+        }
+    }
+    
+}
+
 @media screen and (max-width:880px) {
     .skills {
         margin-top : 40px;
-        &__title {
-            font-size: 24px;
-        }
+        // &__title {
+        //     font-size: 24px;
+        // }
         &__logo {
             display : flex;
             flex-direction: column;
@@ -122,4 +136,66 @@
         }
     }
 }
+
+@media  screen and (max-width:768px) {
+    .skills {
+        margin : 0;
+        border-radius: 0;
+        margin-top: 40px;
+    }
+    .tools {
+        height : 27vh;
+        &__img {
+            width : 75px;
+            height : 75px;
+        }
+
+        .tool-description-git {
+            top :32%;
+            padding : 30px 28px;
+            font-size: 14px;
+        }
+
+        .tool-description {
+            top : 31%;
+            padding: 30px 15px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width:430px) {
+    .skills {
+        margin : 0;
+        margin-top: 40px;
+        &__title {
+            font-size: 17px;
+        }
+    }
+
+    .tools {
+        &__img {
+            width : 65px;
+            height : 65px;
+        }
+
+        &__container {
+            margin: 30px 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .tool-description-git {
+            top :31%;
+            padding : 26px 24px;
+            font-size: 12px;
+        }
+
+        .tool-description {
+            top : 32%;
+            padding: 26px 13px;
+            font-size: 12px;
+        }
+    }
+}
+    
 
