@@ -45,17 +45,11 @@
         padding : 15px;
     }
 
-    // &__desktopMenu {
-    //     color : black;
-    //     position: absolute;
-    //     top :4rem;
-    //     right: 2rem;
-    // }
-
+   
     .mobMenu {
        
         position: absolute;
-        top :5rem;
+        top :7rem;
         right: 2rem;
         z-index: 2;
         display: flex;
@@ -63,15 +57,16 @@
         padding : 0.5rem;
         height: fit-content;
         min-width: 8rem;
-        background: white;
-        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+       
     }
 
     .mobMenuListItem {
         color : black;
         padding : 0.5rem 3rem;
         margin : 0.25rem;
-        background: white;
+        background: transparent;
         cursor: pointer;
         //border-radius: 50px;
 
@@ -112,11 +107,16 @@
     @media screen and (max-width:430px) {
         & {
            
-            height : 5vh;
+            height : 4vh;
         }
         
         &__portfolioName {
             font-size : 26px;
+        }
+
+        .mobMenu {
+            top : 4.5rem;
+            right : 3rem;
         }
         .mobHamburger {
             width : 20px;

@@ -1,5 +1,5 @@
 .contact {
-    height: 80vh;
+    height: 70vh;
     background: linear-gradient(to bottom, rgb(30, 30, 30), rgba(255, 255, 255, 0.9));
 }
 
@@ -10,12 +10,12 @@
 // }
 @media screen and (max-width:768px) {
     .contact {
-        height: 118vh;
+        height: 96vh;
     }
 }
 @media screen and (max-width:430px) {
     .contact {
-        height: 111vh;
+        height: 90vh;
     }
 }
 // @media screen and (max-width:430px) {

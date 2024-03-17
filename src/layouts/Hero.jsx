@@ -1,9 +1,5 @@
 import React, { useRef} from 'react'
-import { Link } from "react-router-dom";
-// import logo from '../assets/tsanta_ai.png'
-// import InfinitText from '../components/InfinitText'
 import HeroAnimationText from '../components/HeroAnimationText'
-// import ButtonContact from '../components/ButtonContact';
 import { FaGithub } from "react-icons/fa6";
 import { LuHardDriveDownload } from "react-icons/lu";
 
@@ -34,9 +30,7 @@ function Hero() {
 
   return (
     <div  id="accueil" className="hero">
-        {/* <div className="hero__Top">
-            <InfinitText />
-        </div> */}
+        
         <div className="hero__gap">
           <div className='hero__Left'>
               <span className="hero__hello">Bonjour,</span> <br />
@@ -52,7 +46,7 @@ function Hero() {
           <div className="hero__Right">
           
               <div className='hero__Img' onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} ref={imgRef}>
-                  <img src="/tsanta_ai.png" alt="logo loïc" className='hero__Logo'/>
+                  <img src="/tsanta_ai.webp" alt="logo loïc" className='hero__Logo'/>
               </div>
           </div>
         </div>

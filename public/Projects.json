@@ -7,8 +7,8 @@
       "skills": ["Installer un environnement de développement front-end", "Intégrer du contenu conformément à une maquette avec HTML et CSS", "Implémenter une interface responsive avec HTML et CSS", "Versionner son projet avec Git et Github"],
       "comments": "Projet 2 de la formation OpenClassRooms - Développeur Web", 
       "tags": ["HTML", "CSS", "Figma", "Github"],
-      "imageIphone": "Booki-Iphone.png",
-      "imageMac" : "Booki-Mac.png",
+      "imageIphone": "Booki-Iphone.webp",
+      "imageMac" : "Booki-Mac.webp",
       "link": "https://space9cowboy.github.io/booki/",
       "iframeSrc": "/projects/projet_1/index.html"
     },
@@ -20,8 +20,8 @@
       "skills": ["Récupérer les données utilisateurs dans le JavaScript via des formulaires", "Manipuler les éléments du DOM avec JavaScript", "Gérer les événements utilisateurs avec JavaScript: Filtres, connexion, envoi de données, API"],
       "comments": "Projet 3 de la formation OpenClassRooms - Développeur Web",
       "tags": ["HTML", "CSS", "JavaScript", "Figma", "Github"],
-      "imageIphone": "Sophie-Iphone.png",
-      "imageMac" : "Sophie-Mac.png",
+      "imageIphone": "sophie-iphone.webp",
+      "imageMac" : "sophie-mac.webp",
       "link": "https://sophie-bluel-architect.vercel.app/",
       "iframeSrc": "/projects/projet_2/FrontEnd/index.html"
     },
@@ -33,8 +33,8 @@
       "skills": ["Initialiser une application avec Create React App/Vite.js", "Développer des éléments de l'interface d'un site web grâce à des composants React", "Configurer la navigation entre les pages de l'application avec React Router", "Mettre en œuvre des animations SCSS"],
       "comments": "Projet 6 de la formation OpenClassRooms - Développeur Web",
       "tags": ["React", "Sass", "Figma", "Github"],
-      "imageIphone": "Kasa-Iphone .png",
-      "imageMac" : "Kasa-Mac.png",
+      "imageIphone": "kasa-iphone.webp",
+      "imageMac" : "kasa-mac.webp",
       "link": "https://projet-8-kasa-brnf30w8b-camillelinan.vercel.app/home",
       "iframeSrc": ""
     },
@@ -46,8 +46,8 @@
       "skills": ["Implémenter un modèle logique de données conformément à la réglementation", "Stocker des données de manière sécurisée", "Mettre en oeuvre des opérations CRUD de manière sécurisée"],
       "comments": "Projet 7 de la formation OpenClassRooms - Développeur Web",
       "tags": ["Node.js", "Express", "MongoDB"],
-      "imageIphone": "MVG-Iphone .png",
-      "imageMac" : "MVG-Mac .png",
+      "imageIphone": "mvg-iphone.webp",
+      "imageMac" : "mvg-mac.webp",
       "link": "https://github.com/space9cowboy/Rabearivony_Loic_OCP7",
       "iframeSrc": ""
     }

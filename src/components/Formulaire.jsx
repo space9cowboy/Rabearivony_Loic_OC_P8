@@ -109,7 +109,7 @@ import { IoIosPhonePortrait } from "react-icons/io";
            </div>
 
            <center>
-             <ButtonContact text="Submit" buttonStyle="btnform" />
+             <ButtonContact text="Soumettre" buttonStyle="btnform" />
            </center>
 
           
